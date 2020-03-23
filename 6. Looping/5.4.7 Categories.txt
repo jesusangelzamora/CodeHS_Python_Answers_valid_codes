@@ -1,0 +1,12 @@
+categories =["","",""]
+things1 = ["","",""]
+things2= ["","",""]
+things3= ["","",""]
+for i in range(3):
+    categories[i]=input("Enter a category: ")
+    things1[i]= input("Enter something in that category: ")
+    things2[i]= input("Enter something in that category: ")
+    things3[i]= input("Enter something in that category: ")
+for i in range(3):
+    cosas = categories[i]+": "+things1[i]+" "+things2[i]+" "+things3[i] 
+    print cosas

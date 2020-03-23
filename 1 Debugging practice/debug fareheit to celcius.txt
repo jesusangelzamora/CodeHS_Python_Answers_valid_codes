@@ -1,0 +1,16 @@
+public class DegreeConversion 
+{
+    public static void main(String[] args)
+    {
+		System.out.println(fahrenheitToCelsius(72));
+		System.out.println(fahrenheitToCelsius(100));
+		System.out.println(fahrenheitToCelsius(32));
+		System.out.println(fahrenheitToCelsius(-10));
+    }
+
+	public static double fahrenheitToCelsius(double degrees)
+	{
+	    return (5/9) * (degrees - 32);
+	}
+	
+}

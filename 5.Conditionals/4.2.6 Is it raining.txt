@@ -1,0 +1,8 @@
+its_Raining = True
+
+# The code below has problems. See if
+# you can fix them!
+if its_Raining: 
+    print "I'm going to dance in the rain!"
+else:
+    print "I'm going to dance in the sun!"

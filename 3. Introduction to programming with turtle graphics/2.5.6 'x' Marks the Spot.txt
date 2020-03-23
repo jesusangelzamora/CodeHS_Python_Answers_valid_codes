@@ -1,0 +1,8 @@
+speed(10)
+left(45)
+for i in range(4):
+    forward(100)
+    penup()
+    backward(100)
+    pendown()
+    left(90)

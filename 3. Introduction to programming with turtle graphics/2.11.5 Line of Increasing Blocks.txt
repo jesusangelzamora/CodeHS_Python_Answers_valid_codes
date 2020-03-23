@@ -1,0 +1,21 @@
+def square(l):
+    pendown()
+    forward(l)
+    left(90)
+    forward(l)
+    left(90)
+    forward(l)
+    left(90)
+    forward(l)
+    left(90)
+    penup()
+lado=10
+mover = 20
+speed(0)
+penup()
+setposition(-150,0)
+for i in range(5):
+    square(lado)
+    print("se movio: ",lado + lado)
+    forward(lado + lado)
+    lado= lado+10

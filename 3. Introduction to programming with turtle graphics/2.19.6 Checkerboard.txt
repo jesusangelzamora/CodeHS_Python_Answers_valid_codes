@@ -1,0 +1,32 @@
+speed(0)
+
+# This function will draw a row of 10 circles.
+def draw_square_row():
+    for color_value in range(10):
+        pendown()
+        if color_value%2 ==0:
+            color("red")
+        else:
+            color("black")
+        begin_fill()
+        for i in range(4):
+            forward(40)
+            left(90)
+        end_fill()
+        penup()
+        forward(40)
+        
+def move_up_a_row():
+    left(90)
+    forward(40)
+    right(90)
+    backward(400)
+    
+# Send Tracy to starting position in bottom left corner.
+penup()
+setposition(-180,-200)
+
+# Call circle drawing function
+for i in range(10):
+    draw_square_row()
+    move_up_a_row()

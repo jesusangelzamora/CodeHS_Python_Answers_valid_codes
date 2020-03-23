@@ -1,0 +1,14 @@
+def square(l):
+    for i in range(4):
+        pendown()
+        forward(l)
+        left(90)
+    penup()
+    forward(l)
+radius = int(input("escribe un radio: "))
+penup()
+speed(10)
+setposition(-radius,-radius)
+square(radius*2)
+setposition(0,-radius)
+circle(radius)

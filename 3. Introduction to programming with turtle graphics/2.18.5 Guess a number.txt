@@ -1,0 +1,17 @@
+def draw_checkmark():
+    pendown()
+    pensize(4)
+    color("green")
+    left(45)
+    forward(40)
+    backward(40)
+    left(90)
+    forward(20)
+    backward(20)
+    penup()
+secret_number = 2
+user_number = 0
+speed(10)
+while user_number!=secret_number:
+    user_number = int(input("ingrese un numero: "))
+draw_checkmark()

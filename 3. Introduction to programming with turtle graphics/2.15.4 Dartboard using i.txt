@@ -1,0 +1,5 @@
+for i in range(25,125,25):
+    penup()
+    setposition(0,-i)
+    pendown()
+    circle(i)

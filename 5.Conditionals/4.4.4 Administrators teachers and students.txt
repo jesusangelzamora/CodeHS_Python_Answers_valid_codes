@@ -1,0 +1,7 @@
+rol = input("Are you an administrator, teacher, or student?: ")
+if rol=="administrator" or rol=="teacher":
+    print "Administrators and teachers get keys!"
+elif rol== "student":
+    print "Students do not get keys!"
+else: 
+    print "You can only be an administrator, teacher, or student!"

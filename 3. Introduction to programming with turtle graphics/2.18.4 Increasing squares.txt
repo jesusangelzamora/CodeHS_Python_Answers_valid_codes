@@ -1,0 +1,14 @@
+def square_center(longitud):
+    penup()
+    setposition(-(longitud/2),-(longitud/2))
+    pendown()
+    for i in range(4):
+        forward(longitud)
+        left(90)
+    penup()
+length =50
+speed(10)
+while length<400:
+    square_center(length)
+    setposition(-(length/2),-(length/2))
+    length= length+50

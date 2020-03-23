@@ -1,0 +1,19 @@
+colores = ["blue", "red", "purple"]
+speed(0)
+index=0
+def makepearl(idcolor):
+    color(colores[idcolor])
+    penup()
+    forward(100)
+    pendown()
+    begin_fill()
+    circle(10)
+    end_fill()
+    penup()
+    backward(100)
+    
+for i in range(36):
+    left(10)
+    makepearl(index)
+    index = index+1
+    if(index>2): index = 0

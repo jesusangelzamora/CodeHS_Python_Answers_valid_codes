@@ -1,0 +1,26 @@
+def cuadrado_centrado():
+    backward(25)
+    pendown()
+    for i in range(4):
+        forward(50)
+        left(90)
+    penup()
+    forward(25)
+def circulo_centrado():
+    pendown()
+    circle(25)
+    penup()
+speed(0)
+penup()
+setposition(0, -200)
+for i in range(4):
+    cuadrado_centrado()
+    left(90)
+    penup()
+    forward(50)
+    right(90)
+    circulo_centrado()
+    left(90)
+    penup()
+    forward(50)
+    right(90)

@@ -1,0 +1,29 @@
+def square(l):
+    pendown()
+    forward(l)
+    left(90)
+    penup()
+    forward(l)
+speed(0)
+def renglonHoriSquare(coordy,num):
+    penup()
+    setposition(-200,coordy)
+    pendown
+    for i in range(num):
+        square(50)
+def renglonVertSquare(coordx,num):
+    penup()
+    setposition(coordx,-200)
+    pendown
+    for i in range(num):
+        square(50)
+        left(90)
+        forward(50)
+        left(90)
+        forward(50)
+        left(180)
+        
+renglonHoriSquare(-200,8)
+renglonHoriSquare(150,8)
+renglonVertSquare(-200,8)
+renglonVertSquare(150,8)

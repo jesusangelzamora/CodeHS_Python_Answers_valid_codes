@@ -1,0 +1,18 @@
+my_float = 3.3312
+
+# Your code here...
+
+# Your code here...
+# Ask use to enter a number until they guess correctly
+# When they guess the right answer, break out of loop
+while True:
+    guess = int(input("Guess my number: "))
+    guess = round(guess,4)
+    if guess == my_float:
+        print "Correct!"
+        break
+    if guess<my_float: print "Too low!"
+    if guess>my_float: print "Too high!"
+
+# Print this sentence once number has been guessed
+print "Great job guessing my number!"

@@ -1,0 +1,8 @@
+total = ""
+number_of_numbers = int(input("How many names do you have"))
+
+for i in range(number_of_numbers):
+    next =input("Enter a name: ")
+    total = total+" " + next
+
+print total

@@ -1,0 +1,10 @@
+speed(10)
+for i in range(10,60,10):
+    for j in range(2):
+        pendown()
+        forward(10)
+        left(90)
+        forward(i)
+        left(90)
+    penup()
+    forward(25)

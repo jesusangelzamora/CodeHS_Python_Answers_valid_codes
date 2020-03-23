@@ -1,0 +1,13 @@
+def dartb(radius,circles):
+    for i in range(circles):
+        penup()
+        setposition(0,-radius)
+        pendown()
+        circle(radius)
+        penup()
+        radius = radius +25
+speed(10)
+colores=[] 
+for i in range(4):
+    colores[i] = input("escribe el color: "+ str(i))
+dartb(25,4,circles)

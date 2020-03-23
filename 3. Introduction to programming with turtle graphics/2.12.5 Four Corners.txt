@@ -1,0 +1,18 @@
+def square(l):
+    pendown()
+    for i in range(4):
+        forward(l)
+        left(90)
+    penup()
+    forward(l)
+
+square_length = int(input ("ingrese longitud: "))
+penup()
+setposition(-200,200)
+square(square_length)
+setposition(200,200)
+square(square_length)
+setposition(200,-200)
+square(square_length)
+setposition(-200,-200)
+square(square_length)

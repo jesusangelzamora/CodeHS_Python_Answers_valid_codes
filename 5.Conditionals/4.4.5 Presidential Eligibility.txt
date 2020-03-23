@@ -1,0 +1,8 @@
+age = int(input("ingrese su edad: "))
+citizen = input("Are you acitizen of the U.S ")
+hlong = int(input("How long have you been a resident in the U.S. "))
+
+if age>=35 and citizen == "yes" and hlong>=14:
+    print "You are eligible to run for president!"
+else:
+    print "You are not eligible to run for president."

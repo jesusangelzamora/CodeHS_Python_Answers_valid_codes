@@ -1,0 +1,6 @@
+avarage =0
+for i in range(3):
+    num = int(input("Ingrese una calificacion: "))
+    avarage = avarage+num
+avarage = avarage/3
+print avarage

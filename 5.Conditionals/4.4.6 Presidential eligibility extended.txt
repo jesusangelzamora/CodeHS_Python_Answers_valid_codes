@@ -1,0 +1,16 @@
+age = int(input("ingrese su edad: "))
+
+born = input("Born in the U.S.? ")
+
+hlong = int(input("How long have you been a resident in the U.S. "))
+
+if age>=35 and born == "Yes" and hlong>=14:
+    print "You are eligible to run for president!"
+else:
+    print "You are not eligible to run for president."
+if age<35:
+    print "you are too young if they are under 35 years old"
+if born =="No":
+    print "You must be born in the U.S. to run for president."
+if hlong<14:
+    print "You have not been a resident for long enough."

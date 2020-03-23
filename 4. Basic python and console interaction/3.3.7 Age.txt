@@ -1,0 +1,3 @@
+edad = int(input("Enter your age: "))
+edad=edad+1
+print "You will need this many candles for your birthday cake: ",edad

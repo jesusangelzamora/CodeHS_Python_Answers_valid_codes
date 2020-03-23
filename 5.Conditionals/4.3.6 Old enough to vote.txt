@@ -1,0 +1,15 @@
+"""
+This program determines if a rider reaches the height requirement for the
+roller coaster.
+"""
+
+age = int(input("Ingese su edad: "))
+height_requirement = 18
+
+# You must be at least 5.0 feet tall to ride the roller coaster.
+can_ride_roller_coaster = age >= height_requirement
+
+if can_ride_roller_coaster:
+    print "You are old enough to vote!"
+else:
+    print "You are not old enough to vote."

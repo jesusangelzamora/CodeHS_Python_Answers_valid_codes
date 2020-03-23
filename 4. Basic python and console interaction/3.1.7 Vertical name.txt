@@ -1,0 +1,5 @@
+print "M"
+print "A"
+print "R"
+print "I"
+print "A"

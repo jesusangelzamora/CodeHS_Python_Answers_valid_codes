@@ -1,0 +1,21 @@
+penup()
+backward(100)
+speed(0)
+pensize(5)
+def makeTriangulo():
+    forward(50)
+    left(180)
+    right(60)
+    color("blue")
+    pendown()
+    forward(50)
+    left(120)
+    color("green")
+    forward(50)
+    left(120)
+    color("red")
+    forward(50)
+    penup()
+    
+for i in range(4):
+    makeTriangulo()

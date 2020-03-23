@@ -1,0 +1,21 @@
+def mkCaterpillar(radio,longitud,colores):
+    pendown()
+    colorix =0
+    for i in range(longitud):
+        color(colores[colorix])
+        begin_fill()
+        circle(radio)
+        end_fill()
+        penup()
+        forward(radio*2)
+        colorix=colorix+1
+        if(colorix>len(colores)-1):
+            colorix=0
+    
+penup()
+speed(10)
+color_choice=[]
+for i in range(4):
+    color_choice.append( input("ingrese un color en ingles: "))
+setposition(-150,0)
+mkCaterpillar(25,8,color_choice)

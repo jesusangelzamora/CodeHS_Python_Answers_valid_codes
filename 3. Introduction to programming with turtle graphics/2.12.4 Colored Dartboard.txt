@@ -1,0 +1,19 @@
+index=0
+def dartb(radius,circles,colors):
+    for i in range(circles):
+        penup()
+        setposition(0,-radius)
+        pendown()
+        color(colors[i])
+        begin_fill()
+        circle(radius)
+        end_fill()
+        penup()
+        radius = radius +25
+        
+speed(0)
+color_choice=["col1","col2","col3","col4",]
+for i in range(4):
+    color_choice[i] = input("escribe el color"+ str(i)+": " )
+    
+dartb(25,4,color_choice)

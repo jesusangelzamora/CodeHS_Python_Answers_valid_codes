@@ -1,0 +1,27 @@
+"""
+Valores iniciales de mi tortuga
+"""
+penup()
+setposition(-100, -195)
+speed(0)
+#Primer piso de la pirámide
+for i in range(3):
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
+#Mueve la tortuga a un buen lugar para empezar el segundo piso
+setposition(-50, -100)
+#Segundo piso de la pirámide
+for i in range(2):
+    pendown()
+    circle(50)
+    penup()
+    forward(100)
+#Mueve la tortuga a un buen lugar para empezar el tercer piso
+setposition(0, 0)
+#tercer piso de la pirámide
+pendown()
+circle(50)
+penup()
+forward(100)

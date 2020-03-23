@@ -1,0 +1,22 @@
+def replace_at_index(text, position, replace):
+    length = len(text)
+    
+    # If position to replace is an illegal 
+    # position, return without replacing
+    if position >= length:
+        return text
+        
+    # Iterate through text and replace letter
+    # at position with new string
+    result_str = ""
+    for i in range(length):
+        if i == position:
+            result_str += replace
+        else:
+            result_str += text[i]
+    
+    return result_str
+    
+    
+print replace_at_index("karel", 0, "K")
+print replace_at_index("CA", 1, "ALIFORNIA")

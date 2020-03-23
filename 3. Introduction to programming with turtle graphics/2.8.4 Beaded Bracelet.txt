@@ -1,0 +1,11 @@
+def ve_perla():
+    penup()
+    forward(100)
+    pendown()
+    circle(10)
+    penup()
+    backward(100)
+speed(0)
+for i in range(36):
+    left(10)
+    ve_perla()
