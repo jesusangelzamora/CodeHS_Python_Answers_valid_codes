@@ -1,0 +1,12 @@
+dictionary={}
+
+text=input("Enter some text: ")
+text=text.split(" ")
+
+for i in range(len(text)):
+    dictionary[text[i]]= 0
+
+for i in range(len(text)):
+    dictionary[text[i]]=int(dictionary[text[i]]) + 1
+     
+print dictionary

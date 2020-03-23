@@ -1,0 +1,4 @@
+num = num2 = 1
+def myf(x,y):
+    return x+y
+myf(num,num2)

@@ -1,0 +1,6 @@
+def myf(x,y):
+    print "resultado: "+ str(x+y)
+
+a = int(input("Ingrese un numero: "))
+b = int(input("Ingrese un numero: "))
+myf(a,b)

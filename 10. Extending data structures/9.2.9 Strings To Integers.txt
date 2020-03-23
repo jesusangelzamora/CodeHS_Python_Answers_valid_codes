@@ -1,0 +1,24 @@
+  
+# Write your function here...
+
+
+list_of_strings = ["a", "2", "7", "h"]
+
+# Your code here...
+new = []
+
+def safe_int(x):
+    new = []
+    try:
+        y = int(x)
+    except:
+        y = 0
+    new.append(y)
+    return new
+
+new = [safe_int(y) for y in list_of_strings]
+
+newa = []
+for num in new:
+    newa.append(num[0])
+print newa

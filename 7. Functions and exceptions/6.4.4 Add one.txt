@@ -1,0 +1,4 @@
+num = 1
+def myf(x):
+    return x+1
+myf(num)

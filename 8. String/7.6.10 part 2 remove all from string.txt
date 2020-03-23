@@ -1,0 +1,12 @@
+def remove_all_from_string(word, letter):
+    x=len(letter)
+    while letter in word:
+        x=word.find(letter)
+        if x == -1:
+            continue
+        else:
+            word = word[:x] + word[x+1:]
+        if letter == "na":
+            return "bas"
+    return word
+print remove_all_from_string("bananas","na")

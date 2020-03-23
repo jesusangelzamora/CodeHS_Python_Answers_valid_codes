@@ -1,0 +1,53 @@
+import random 
+def get_guess():
+    guess="aaa"
+    while len(guess)>1:
+        guess=input("Guess: ")
+        if len(guess)>1:
+            print "Solo puede ingresar una letra"
+    guess = guess.lower()
+    return guess
+
+def update_dashes(word,x):
+    dashes = []
+    cual = ["replace"]
+    for i in range (len(word)):
+        encontrada =False
+        for j in range (len(x)):
+            if word[i]==x[j]:
+                encontrada = True
+                cual[0] = x[j]
+        if encontrada == True:
+            dashes.append(cual[0]+" ")
+        else:
+            dashes.append("-")
+    return "".join(dashes)
+   
+guesses_left =10
+adivinadas =""
+intento =""
+print "Buena suerte"
+  
+words = ['arcoiris', 'computadora', 'ciencia', 'tonto',  
+         'python', 'cocodrilo', 'vistima', 'condicion',  
+         'curso', 'mapitas3', 'ensayo', 'rectum']
+pw = random.choice(words)
+win = len(pw)
+sw =0
+while guesses_left>=0:
+    print "intentos restantes: "+ str(guesses_left)
+    intento = get_guess()
+    if pw.find(intento)>-1:
+        print "Buen trabajo, adivinaste una letra"
+        adivinadas = adivinadas+intento
+        print update_dashes(pw,intento)
+        sw += 1
+        if sw == win:
+            print "Congrats! The word was: "+pw
+            print"You win."
+    else:
+        print "Te has equivocado >:D"
+        print update_dashes(pw,adivinadas)
+        guesses_left -= 1
+        if  guesses_left ==0:
+            print "You lose!"

@@ -1,0 +1,4 @@
+def replace_at_index(s,n):
+    x = s[:n]+"-"+s[n+1:]
+    return x
+print replace_at_index("eggplant",3)

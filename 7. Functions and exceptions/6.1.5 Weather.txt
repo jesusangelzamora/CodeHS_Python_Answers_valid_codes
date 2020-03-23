@@ -1,0 +1,29 @@
+"""
+This code will print out a greeting based on the time of day.
+"""
+
+# This function will print a greeting for the morning
+def day_sunny():
+    print "On a sunny day, sandals are appropriate footwear."
+    
+# This function will print a greeting for the afternoon
+def day_rainy():
+    print "On a rainy day, galoshes are appropriate footwear."
+    
+# This function will print a greeting for the evening
+def day_snowy():
+    print "On a snowy day, boots are appropriate footwear."
+    
+
+# Get input from the user and print matching greeting
+# If other option, print that it is invalid
+time_of_day = input("What is the weather? (sunny, rainy, snowy): rainy")
+
+if time_of_day == "sunny":
+    day_sunny()
+elif time_of_day == "rainy":
+    day_rainy()
+elif time_of_day == "snowy":
+    day_snowy()
+else:
+    print "Invalid option."

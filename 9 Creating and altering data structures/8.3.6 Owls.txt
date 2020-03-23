@@ -1,0 +1,7 @@
+text = input(Enter some text )
+text.lower()
+text.split()
+print There are  + str(text.count(owl)) +  words that contained owl.
+print They occured at indices 
+for c, value in enumerate(text, 1)
+    print(c, value)

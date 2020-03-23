@@ -1,0 +1,3 @@
+info= input("Enter the following info- Name Age Favorite Sport:")
+info = info.split()
+print "Hello,",info[0]+"!","I also enjoy",info[2]+"!"

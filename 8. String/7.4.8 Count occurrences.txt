@@ -1,0 +1,11 @@
+def count_occurrences(s,s2):
+    i=0
+    for letter in len(s):
+        if s[letter] == s2:
+            i = i+1
+    return i
+word = input("Ingrese una palabra")
+letra = "AA"
+while len(letra)>1:
+    letra = input("Ingrese una letra de un caracter: ")
+print "Ocurrencias: "+ str(count_occurrences(word,letra))

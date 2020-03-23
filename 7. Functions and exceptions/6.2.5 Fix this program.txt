@@ -1,0 +1,11 @@
+"""
+This program takes two values and prints their sum.
+"""
+
+def add_nums():
+    num1 = 5
+    num2 = 6
+    total = num1 + num2
+    
+add_nums()
+print add_nums()

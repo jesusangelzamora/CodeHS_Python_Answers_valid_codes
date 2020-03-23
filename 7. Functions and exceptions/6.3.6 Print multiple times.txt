@@ -1,0 +1,7 @@
+def myf(x,y):
+    for i in range(y):
+        print x
+
+a = int(input("Ingrese un numero: "))
+b = input("Ingrese un string: ")
+myf(a,b)

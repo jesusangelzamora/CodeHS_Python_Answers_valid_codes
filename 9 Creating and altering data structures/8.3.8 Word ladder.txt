@@ -1,0 +1,33 @@
+def get_index():
+    while True:
+        global index
+        index=int(input("Enter an index (-1 to quit): "))
+        if index > len(word):
+            print "Invalid index"
+        elif index< -1:
+            print "Invalid index"
+        elif index==-1:
+            break
+        else:
+            break
+def get_letter():
+    while True:
+        global letter
+        letter=input("Enter a letter: ")
+        if len(letter) != len(" "):
+            print "Must be exactly one character!"
+        elif letter != letter.lower():
+            print "Character must be a lowercase letter!"
+        else:
+            break
+index=0
+letter=""
+word=input("Enter a word: ")
+while True:
+    get_index()
+    if index==-1:
+        break
+    get_letter()
+    list(word)
+    print str(word[:index]) + letter + str(word[index+1:])
+    word=str(word[:index]) + letter + str(word[index+1:])

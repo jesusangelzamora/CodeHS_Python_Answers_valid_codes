@@ -1,0 +1,5 @@
+one = int(input("Enter a number: "))
+two = int(input("Enter a number: "))
+
+my_list = (one,two)
+print my_list

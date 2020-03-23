@@ -1,0 +1,27 @@
+list=[]
+
+list_2=[]
+
+count=0
+
+
+while True:
+    x1=int(input("Enter a number: "))
+    list_2.append(x1)
+    y1=int(input("Enter a number: "))
+    list_2.append(y1)
+    list.append((x1,y1))
+    count=count+1
+    if count==5:
+        break
+    x2=int(input("Enter a number: "))
+    list_2.append(x2)
+    y2=int(input("Enter a number: "))
+    list_2.append(y2)
+    list.append((x2,y2))
+    count=count+1
+
+print "Slope between " + str(list[0]) + " and " + str(list[1]) + ": " + str((float(list_2[3]) -float(list_2[1])) / (float(list_2[2]) - float(list_2[0])))
+print "Slope between " + str(list[1]) + " and " + str(list[2]) + ": " + str((float(list_2[5]) -float(list_2[3])) / (float(list_2[4]) - float(list_2[2]))) 
+print "Slope between " + str(list[2]) + " and " + str(list[3]) + ": " + str((float(list_2[7]) -float(list_2[5])) / (float(list_2[6]) - float(list_2[4]))) 
+print "Slope between " + str(list[3]) + " and " + str(list[4]) + ": " + str((float(list_2[9]) -float(list_2[7])) / (float(list_2[8]) - float(list_2[6])))

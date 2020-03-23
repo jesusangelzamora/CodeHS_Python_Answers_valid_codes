@@ -1,0 +1,3 @@
+    s=s.upper()+"!"
+    return s
+print add_enthusiasm(input("Escribe una palabra: "))

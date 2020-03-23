@@ -1,0 +1,14 @@
+phoneBook = {}
+
+
+while True:
+    ask = input("Enter a name: ")
+    if ask == "":
+        break
+    elif ask not in phoneBook:
+        number = input("Phone number: ")
+        phoneBook[ask] = number
+    else:
+        print "Phone number: " + str(phoneBook[ask])
+
+print (phoneBook)

@@ -1,0 +1,9 @@
+first = input("First Name: ")
+last = input("Last Namme: ")
+x = (first,last)
+first, last = last, first
+y = (first+ ", " + last)
+full = " ".join(x)
+citation = "".join(y)
+print "Full name: " + str(full)
+print "Citation: " + str(citation)

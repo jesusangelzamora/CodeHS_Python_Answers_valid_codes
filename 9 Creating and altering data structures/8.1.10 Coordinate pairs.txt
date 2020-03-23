@@ -1,0 +1,9 @@
+import math
+
+def distance(first_point, second_point):
+    # Your code here...
+    return math.sqrt((pow(first_point[0]-second_point[0],2))+(pow(first_point[1]-second_point[1],2)))
+
+
+# This should print 5.0
+print distance((1, 1), (4, 5))

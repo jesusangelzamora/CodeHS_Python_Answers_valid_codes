@@ -1,0 +1,13 @@
+big_string = input("Enter a string of lowercase letters: ")
+if "a" in big_string :
+    print "Contains a lowercase vowel!"
+elif "e" in big_string:
+    print "Contains a lowercase vowel!"
+elif "i" in big_string:
+    print "Contains a lowercase vowel!"
+elif "o" in big_string:
+    print "Contains a lowercase vowel!"
+elif "u" in big_string:
+    print "Contains a lowercase vowel!"
+else:
+    print "Doesn't contain a lowercase vowel."

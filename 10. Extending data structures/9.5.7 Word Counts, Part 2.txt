@@ -1,0 +1,17 @@
+dictionary={}
+
+word=input("Enter some text: ")
+word=word.split(" ")
+
+for i in range(len(word)):
+    dictionary[word[i]]= 0
+
+for i in range(len(word)):
+    dictionary[word[i]]=int(dictionary[word[i]]) + 1
+     
+print dictionary
+
+def update_counts(count_dictionary, word):
+    dictionary = {}
+    
+update_counts(dictionary, word)

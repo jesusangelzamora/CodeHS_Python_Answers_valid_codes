@@ -1,0 +1,15 @@
+s = input("Enter a string of lowercase letters: ")
+def vif(big_string):
+    for i in range(len(big_string)):
+        x= big_string.find("a")
+        if "a" in big_string[i].lower():
+            print "There is an a in your name, first found at index "+ str(i)
+        elif "e" in big_string[i].lower():
+            print "There is an e in your name, first found at index "+ str(i)
+        elif "i" in big_string[i].lower():
+            print "There is an i in your name, first found at index "+ str(i)
+        elif "o" in big_string[i].lower():
+            print "There is an o in your name, first found at index "+ str(i)
+        elif "u" in big_string[i].lower():
+            print "There is an u in your name, first found at index "+ str(i)
+vif(s)

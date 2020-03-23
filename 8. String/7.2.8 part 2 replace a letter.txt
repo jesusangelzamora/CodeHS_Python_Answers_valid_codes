@@ -1,0 +1,7 @@
+def replace_at_index(s,n,s2):
+    x = s[:n]+s2+s[n+1:]
+    return x
+word = input("Enter a word or phrase: ")
+value = int(input("Enter an index value: "))
+letter = input("Enter the new letter: ")
+print replace_at_index(word,value,letter)

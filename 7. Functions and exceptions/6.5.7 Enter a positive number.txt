@@ -1,0 +1,10 @@
+def retrieve_positive_number():
+    n = 0
+    while n<=0:
+        try:
+            n = int(input("Ingrese un numero positivo: "))
+            if n>0:
+                return n
+        except ValueError:
+            print "Ingrese un tipo entero"
+retrieve_positive_number()

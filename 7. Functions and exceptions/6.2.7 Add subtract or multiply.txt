@@ -1,0 +1,17 @@
+n1=int(input("What is the first number?: "))
+n2=int(input("What is the second number?: "))
+def add(a,b):
+    print str(a)+" + "+str(b)+" = "+str(a+b)
+def substract(a,b):
+    print str(a)+" - "+str(b)+" = "+str(a-b)
+def multiply(a,b):
+    print str(a)+" * "+str(b)+" = "+str(a*b)
+choose=input("Choose an operation (add, subtract, multiply): ")
+if choose == "add":
+    add(n1,n2)
+elif choose == "subtract":
+    substract(n1,n2)
+elif choose == "multiply":
+    multiply(n1,n2)
+else:
+    print "Invalid operation"
